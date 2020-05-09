@@ -2,6 +2,8 @@ package Selenium.BuildFramework;
 
 import org.testng.annotations.Test;
 
+import Selenium.Resources.BaseClass;
+
 public class HomePage extends BaseClass {
 	
 	@Test

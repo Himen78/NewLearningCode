@@ -1,4 +1,4 @@
-package Selenium.BuildFramework;
+package Selenium.Resources;
 
 import java.io.FileInputStream;
 import java.util.Properties;
