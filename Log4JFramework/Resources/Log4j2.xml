@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+<Properties>
+   <Property name="basePath">./selenium.log4j.logfiles</Property>
+  </Properties>
+  <Appenders>
+  <RollingFile name="File" fileName="${basePath}/PrintLogs.log" filePattern="${basePath}/PrintLogs-%d{MM-dd-yyyy}.log"/>
+      <PatternLayout Pattern= "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+      <SizeBasedTriggeringPolicy size="500" />
+    </RollingFile>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Logger name="selenium.log4j.alpha.Log4JDemo" level="error" additivity="false">
+      <AppenderRef ref="File"/>
+    </Logger>
+    <Root level="trace">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>

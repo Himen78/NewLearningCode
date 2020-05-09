@@ -1,0 +1,6 @@
+19:05:00.024 [main] DEBUG selenium.log4j.alpha.Log4JDemo - This is debug Message
+19:05:00.029 [main] INFO  selenium.log4j.alpha.Log4JDemo - This is infromation message in Log4J
+19:05:00.030 [main] ERROR selenium.log4j.alpha.Log4JDemo - This is error message in log4j
+19:05:00.030 [main] FATAL selenium.log4j.alpha.Log4JDemo - This is fatal error message
+19:06:10.847 [main] ERROR selenium.log4j.alpha.Log4JDemo - This is error message in log4j
+19:06:10.852 [main] FATAL selenium.log4j.alpha.Log4JDemo - This is fatal error message
