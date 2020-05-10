@@ -1,4 +1,4 @@
-package Selenium.Resources;
+package Selenium.Resource;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -15,7 +15,7 @@ public class BaseClass {
 	{
 	
 		Properties prop = new Properties();
-		FileInputStream FIS = new FileInputStream("C:\\Users\\Himen\\Documents\\Eclipse Work Station\\BuildFramework\\src\\test\\java\\Selenium\\BuildFramework\\Data.properties");
+		FileInputStream FIS = new FileInputStream("H:\\Git\\MyLocalGit\\BuildFramework\\src\\main\\java\\Selenium\\Resource\\Data.properties");
 		
 		prop.load(FIS);
 		String browserName = prop.getProperty("browser");
