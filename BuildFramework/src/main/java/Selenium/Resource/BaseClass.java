@@ -10,11 +10,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BaseClass {
 	
 	public WebDriver driver;
+	public Properties prop;
 	
 	public WebDriver initializeDriver() throws Exception
 	{
 	
-		Properties prop = new Properties();
+		prop = new Properties();
 		FileInputStream FIS = new FileInputStream("H:\\Git\\MyLocalGit\\BuildFramework\\src\\main\\java\\Selenium\\Resource\\Data.properties");
 		
 		prop.load(FIS);
@@ -38,7 +39,6 @@ public class BaseClass {
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
-		
 	}
 
 }

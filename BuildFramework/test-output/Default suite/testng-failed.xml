@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.BuildFramework.HomePage">
+      <class name="Selenium.BuildFramework.ValidateTitle">
         <methods>
-          <include name="basePageNavigation"/>
+          <include name="getTitlePage"/>
         </methods>
-      </class> <!-- Selenium.BuildFramework.HomePage -->
+      </class> <!-- Selenium.BuildFramework.ValidateTitle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
