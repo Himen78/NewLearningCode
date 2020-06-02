@@ -31,26 +31,95 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">67.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Validate title</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">12.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">HomePage Testcase</td><td class="numi">2</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">79.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">3</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">79.1 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">Selenium.BuildFramework.ValidateTitle</td><td><a href="#m1"><b>getTitlePage</b>  </a></td><td class="numi">1</td><td>1589394969307</td><td class="numi">16176</td></tr>
-<tr class="passedeven"><td rowspan="2">Selenium.BuildFramework.HomePage</td><td><a href="#m2"><b>basePageNavigation</b>  </a></td><td class="numi">2</td><td>1589394985492</td><td class="numi">51219</td></tr><tr class="passedeven"><td><a href="#m3"><b>basePageNavigation</b>  </a></td><td class="numi">2</td><td>1589394985492</td><td class="numi">51219</td></tr>
+<tr><th colspan="4">Validate title &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">Selenium.BuildFramework.ValidateTitle</td><td><a href="#m1"><b>getTitlePage</b>  </a></td><td class="numi">1</td><td>1589480782494</td><td class="numi">12331</td></tr>
+<tr><th colspan="4">HomePage Testcase &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">Selenium.BuildFramework.HomePage</td><td><a href="#m2"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1589480861307</td><td class="numi">0</td></tr>
+<tr><th colspan="4">HomePage Testcase &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">Selenium.BuildFramework.HomePage</td><td><a href="#m3"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1589480805545</td><td class="numi">55753</td></tr><tr class="failedodd"><td><a href="#m4"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1589480805545</td><td class="numi">55753</td></tr>
+<tr><th colspan="4">HomePage Testcase &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">Selenium.BuildFramework.HomePage</td><td><a href="#m5"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1589480782494</td><td class="numi">23050</td></tr><tr class="passedodd"><td><a href="#m6"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1589480782494</td><td class="numi">23050</td></tr>
 </table>
-<h1>Test</h1>
-<h2 id="m1">Selenium.BuildFramework.HomePage:basePageNavigation</h2>
+<h1>Validate title</h1>
+<h2 id="m1">Selenium.BuildFramework.ValidateTitle:getTitlePage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>HomePage Testcase</h1>
+<h2 id="m2">Selenium.BuildFramework.HomePage:tearDown</h2>
+<div style="padding-left:3em">
+<p>chrome not reachable
+  (Session info: chrome=81.0.4044.138)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7600 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HIMEN-PC&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\Himen\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 81.0.4044.138, webStorageEnabled: true}
+Session ID: abfa55217ff31bae1f6f440414982f79</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+<br/>at Selenium.BuildFramework.HomePage.tearDown(HomePage.java:58)
+<br/>19 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">Selenium.BuildFramework.HomePage:basePageNavigation</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>xyz@gmail.com</td>
 <td>DataSetSecondPassword</td>
 </tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>chrome not reachable
+  (Session info: chrome=81.0.4044.138)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7600 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HIMEN-PC&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\Himen\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 81.0.4044.138, webStorageEnabled: true}
+Session ID: abfa55217ff31bae1f6f440414982f79
+*** Element info: {Using=id, value=user_email}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:188)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at Selenium.PageObject.LoginPage.getEmail(LoginPage.java:22)
+<br/>at Selenium.BuildFramework.HomePage.basePageNavigation(HomePage.java:26)
+<br/>21 lines not shown
+</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">Selenium.BuildFramework.ValidateTitle:getTitlePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">Selenium.BuildFramework.HomePage:basePageNavigation</h2>
+<h2 id="m4">Selenium.BuildFramework.HomePage:basePageNavigation</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>abc@gmail.com</td>

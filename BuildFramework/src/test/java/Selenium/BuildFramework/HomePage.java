@@ -1,5 +1,6 @@
 package Selenium.BuildFramework;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -9,6 +10,8 @@ import Selenium.PageObject.LoginPage;
 import Selenium.Resource.BaseClass;
 
 public class HomePage extends BaseClass {
+	
+	public WebDriver driver;
 	
 	
 	@Test(dataProvider="getData")
