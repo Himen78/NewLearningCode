@@ -2,6 +2,7 @@ package com.restassured;
 
 import io.restassured.RestAssured;
 import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
 
 public class RestAssuredBasic {
 
@@ -28,6 +29,7 @@ public class RestAssuredBasic {
                         "  \"website\": \"https://rahulshettyacademy.com\",\n" +
                         "  \"language\": \"English-IN\"\n" +
                         "}\n").when().post("maps/api/place/add/json")
-                .then().log().all().assertThat().statusCode(200);
+                .then().log().all().assertThat().statusCode(200).body("scope",equalTo("APP"))
+                .header("server","Apache/2.4.18 (Ubuntu)");
     }
 }
